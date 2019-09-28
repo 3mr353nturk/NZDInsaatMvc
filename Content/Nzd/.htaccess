@@ -1,0 +1,2 @@
+RewriteCond %{HTTP:SSL} !^true$ [NC]
+RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_www.nzdinsaat.com}

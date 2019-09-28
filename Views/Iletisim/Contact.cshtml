@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_LayoutEnglish.cshtml";
+}
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <h3 class="tt-title">CONTACT</h3>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="/Home/Index">Home Page</a></li>
+                <li><i class="icofont icofont-double-right"></i></li>
+                <li class="active"><a href="/Iletisim/Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="contact_us cellpadding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="icon_classes">
+                    <h5><i class="icofont icofont-home"></i>Address</h5>
+                    <p> Yenibosna Central Neighborhood Değirmenbahçe Street Airporthill C 11/9 D: 13 Bahçelievler/İstanbul</p>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="icon_classes">
+                    <h5><i class="icofont icofont-phone"></i>Phone</h5>
+                    <p>0 (212) 551 90 61</p>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="icon_classes last">
+                    <h5><i class="icofont icofont-envelope"></i>Email</h5>
+                    <p><a href="mailto:info@nzdinsaat.com">info@nzdinsaat.com</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact_form">
+    <div class="container">
+        <div class="row">
+            <div class="tt-title text-center">You can make contact with us!</div>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="contact_us2_form">
+                    <form action="/Iletisim/MailGonder" method="post" id="contactusForm">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group top_bottom">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group top_bottom">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group top_bottom">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group Message top_bottom">
+                                <label for="exampleTextarea">Message</label>
+                                <textarea class="form-control" id="message" name="message"></textarea>
+                            </div>
+                            <div class="form_btn">
+                                <button type="submit" class="btn sim-button button8" name="contactForm" value="contactForm" id="contactForm"><span>Send<i class="icofont icofont-tick-mark"></i></span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="map">
+    <div class="google-maps">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3151.811052924625!2d144.96300941578755!3d-37.817894479751644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEnvato+Pty+Ltd%2C+13%2F2+Elizabeth+St+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sin!4v1530078148702" width="600" height="500" allowfullscreen></iframe>
+    </div> js -->
+         </div>
+<br /><br />
+<div class="footer_strip footer_strip_02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="footer_main">
+                    <img src="~/Content/Nzd/assets/images/home2/logo.png" class="img-responsive" alt="Footer-Logo">
+                    <div class="simple-text">
+                        <p> Yenibosna Central Neighborhood Değirmenbahçe Street Airport Hill C 11/9 D: 13 Bahçelievler/İstanbul</p>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/company/26205867/admin/"><i class="icofont icofont-social-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/nzdinsaat/"><i class="icofont icofont-social-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/Nzd-%C4%B0n%C5%9Faat-Tic-Ltd-%C5%9Eti-111595270220008/?modal=admin_todo_tour"><i class="icofont icofont-social-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC0ieLPLdjtHh40wY-tP001A/about?disable_polymer=1"><i class="icofont icofont-social-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="footer_one">
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <h4 class="sub-title"><i class="icofont icofont-phone"></i> Phone</h4>
+                        <p>+90 (212) 551 90 61</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <h4 class="sub-title"><i class="icofont icofont-envelope"></i> Email </h4>
+                        <p><a href="mailto:info@nzdinsaat.com">info@nzdinsaat.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer_bottom">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="copyright">
+                <p><span><a href="https://www.bykuul.com.tr">Bykuul Creative</a></span>© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="links">
+                <ul>
+                    <li><a href="~/Content/Nzd/legalwarning.html">Legal Warning</a></li>
+                    <li><a href="~/Content/Nzd/cookiepolicy.html">Cookie Policy</a></li>
+                    <li><a href="~/Content/Nzd/privacypolicy.html">Privacy Policy</a></li>
+                    <li><a href="~/Content/Nzd/aboutus.html">About Us </a></li>
+                    <li><a href="~/Content/Nzd/contact.html"> Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

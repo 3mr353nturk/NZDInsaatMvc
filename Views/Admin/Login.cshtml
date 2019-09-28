@@ -1,0 +1,28 @@
+﻿@model  NZDInsaatMvc.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+@using (Html.BeginForm("Login", "Admin", FormMethod.Post))
+{
+<form>
+    <h1>NZD İnşaat Admin Paneli Girişi</h1>
+    <div>
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        
+        @*<input type="text" name="Email" class="form-control" placeholder="Kullanıcı Adı" required="" />*@
+    </div>
+    <div>
+        @Html.TextBoxFor(m => m.Sifre, new { @class = "form-control" })
+        @*<input type="password" name="Sifre" class="form-control" placeholder="Şifre" required="" />*@
+    </div>
+    <div>
+        <button type="submit" class="btn btn-default submit">  Giriş Yap </button>
+     
+        @*<a class="reset_pass" href="#">Şifremi Unuttum?</a>*@
+    </div>
+</form>
+}
+

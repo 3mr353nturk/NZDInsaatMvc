@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NZDInsaatDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CozumOrtaklari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="750" />
+    <Property Name="ResimYolu" Type="varchar" MaxLength="750" />
+  </EntityType>
+  <EntityType Name="CozumOrtaklariAnasayfa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="750" />
+    <Property Name="ResimYolu" Type="varchar" MaxLength="750" />
+  </EntityType>
+  <EntityType Name="IsOrtaklari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="750" />
+    <Property Name="ResimYolu" Type="varchar" MaxLength="750" />
+  </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdiSoyadi" Type="varchar" MaxLength="250" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Sifre" Type="varchar" MaxLength="50" />
+    <Property Name="EklenmeTarihi" Type="datetime" />
+    <Property Name="EkleyenKisi" Type="varchar" MaxLength="50" />
+    <Property Name="DegistirilmeTarihi" Type="datetime" />
+    <Property Name="DegistirenKisi" Type="varchar" MaxLength="50" />
+    <Property Name="Resim" Type="varchar" MaxLength="750" />
+    <Property Name="Role" Type="varchar" MaxLength="50" />
+    <Property Name="OturumId" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Projeler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="750" />
+    <Property Name="ResimYolu" Type="varchar" MaxLength="750" />
+    <Property Name="Tamamlanan" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="NZDInsaatDbModelStoreContainer">
+    <EntitySet Name="CozumOrtaklari" EntityType="Self.CozumOrtaklari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CozumOrtaklariAnasayfa" EntityType="Self.CozumOrtaklariAnasayfa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IsOrtaklari" EntityType="Self.IsOrtaklari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Projeler" EntityType="Self.Projeler" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

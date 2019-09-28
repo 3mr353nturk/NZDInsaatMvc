@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NZDInsaatDbModelStoreContainer" CdmEntityContainer="NZDInsaatDbEntities">
+    <EntitySetMapping Name="CozumOrtaklari">
+      <EntityTypeMapping TypeName="NZDInsaatDbModel.CozumOrtaklari">
+        <MappingFragment StoreEntitySet="CozumOrtaklari">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CozumOrtaklariAnasayfa">
+      <EntityTypeMapping TypeName="NZDInsaatDbModel.CozumOrtaklariAnasayfa">
+        <MappingFragment StoreEntitySet="CozumOrtaklariAnasayfa">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IsOrtaklari">
+      <EntityTypeMapping TypeName="NZDInsaatDbModel.IsOrtaklari">
+        <MappingFragment StoreEntitySet="IsOrtaklari">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="NZDInsaatDbModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="OturumId" ColumnName="OturumId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdiSoyadi" ColumnName="AdiSoyadi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="EkleyenKisi" ColumnName="EkleyenKisi" />
+          <ScalarProperty Name="DegistirilmeTarihi" ColumnName="DegistirilmeTarihi" />
+          <ScalarProperty Name="DegistirenKisi" ColumnName="DegistirenKisi" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projeler">
+      <EntityTypeMapping TypeName="NZDInsaatDbModel.Projeler">
+        <MappingFragment StoreEntitySet="Projeler">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+          <ScalarProperty Name="Tamamlanan" ColumnName="Tamamlanan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

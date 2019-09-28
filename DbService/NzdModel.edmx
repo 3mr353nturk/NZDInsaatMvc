@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NZDInsaatDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CozumOrtaklari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="varchar" MaxLength="750" />
+          <Property Name="ResimYolu" Type="varchar" MaxLength="750" />
+        </EntityType>
+        <EntityType Name="CozumOrtaklariAnasayfa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="varchar" MaxLength="750" />
+          <Property Name="ResimYolu" Type="varchar" MaxLength="750" />
+        </EntityType>
+        <EntityType Name="IsOrtaklari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="varchar" MaxLength="750" />
+          <Property Name="ResimYolu" Type="varchar" MaxLength="750" />
+        </EntityType>
+        <EntityType Name="Kullanici">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdiSoyadi" Type="varchar" MaxLength="250" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Sifre" Type="varchar" MaxLength="50" />
+          <Property Name="EklenmeTarihi" Type="datetime" />
+          <Property Name="EkleyenKisi" Type="varchar" MaxLength="50" />
+          <Property Name="DegistirilmeTarihi" Type="datetime" />
+          <Property Name="DegistirenKisi" Type="varchar" MaxLength="50" />
+          <Property Name="Resim" Type="varchar" MaxLength="750" />
+          <Property Name="Role" Type="varchar" MaxLength="50" />
+          <Property Name="OturumId" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Projeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="varchar" MaxLength="750" />
+          <Property Name="ResimYolu" Type="varchar" MaxLength="750" />
+          <Property Name="Tamamlanan" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="NZDInsaatDbModelStoreContainer">
+          <EntitySet Name="CozumOrtaklari" EntityType="Self.CozumOrtaklari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CozumOrtaklariAnasayfa" EntityType="Self.CozumOrtaklariAnasayfa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IsOrtaklari" EntityType="Self.IsOrtaklari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Projeler" EntityType="Self.Projeler" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NZDInsaatDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CozumOrtaklari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+          <Property Name="ResimYolu" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CozumOrtaklariAnasayfa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+          <Property Name="ResimYolu" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="IsOrtaklari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+          <Property Name="ResimYolu" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Kullanici">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdiSoyadi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EklenmeTarihi" Type="DateTime" Precision="3" />
+          <Property Name="EkleyenKisi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DegistirilmeTarihi" Type="DateTime" Precision="3" />
+          <Property Name="DegistirenKisi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Resim" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OturumId" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Projeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+          <Property Name="ResimYolu" Type="String" MaxLength="750" FixedLength="false" Unicode="false" />
+          <Property Name="Tamamlanan" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="NZDInsaatDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CozumOrtaklari" EntityType="Self.CozumOrtaklari" />
+          <EntitySet Name="CozumOrtaklariAnasayfa" EntityType="Self.CozumOrtaklariAnasayfa" />
+          <EntitySet Name="IsOrtaklari" EntityType="Self.IsOrtaklari" />
+          <EntitySet Name="Kullanici" EntityType="Self.Kullanici" />
+          <EntitySet Name="Projeler" EntityType="Self.Projeler" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NZDInsaatDbModelStoreContainer" CdmEntityContainer="NZDInsaatDbEntities">
+          <EntitySetMapping Name="CozumOrtaklari">
+            <EntityTypeMapping TypeName="NZDInsaatDbModel.CozumOrtaklari">
+              <MappingFragment StoreEntitySet="CozumOrtaklari">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CozumOrtaklariAnasayfa">
+            <EntityTypeMapping TypeName="NZDInsaatDbModel.CozumOrtaklariAnasayfa">
+              <MappingFragment StoreEntitySet="CozumOrtaklariAnasayfa">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IsOrtaklari">
+            <EntityTypeMapping TypeName="NZDInsaatDbModel.IsOrtaklari">
+              <MappingFragment StoreEntitySet="IsOrtaklari">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kullanici">
+            <EntityTypeMapping TypeName="NZDInsaatDbModel.Kullanici">
+              <MappingFragment StoreEntitySet="Kullanici">
+                <ScalarProperty Name="OturumId" ColumnName="OturumId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdiSoyadi" ColumnName="AdiSoyadi" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+                <ScalarProperty Name="EkleyenKisi" ColumnName="EkleyenKisi" />
+                <ScalarProperty Name="DegistirilmeTarihi" ColumnName="DegistirilmeTarihi" />
+                <ScalarProperty Name="DegistirenKisi" ColumnName="DegistirenKisi" />
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projeler">
+            <EntityTypeMapping TypeName="NZDInsaatDbModel.Projeler">
+              <MappingFragment StoreEntitySet="Projeler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+                <ScalarProperty Name="Tamamlanan" ColumnName="Tamamlanan" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
